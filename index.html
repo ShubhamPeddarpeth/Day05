@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+        const data = {
+            "people": [
+                { "id": 1, "name": "shubham" },
+                { "id": 2, "name": "Shantveer" },
+                { "id": 3, "name": "Kartik" }
+            ]
+        };
+
+
+        for (let i = 0; i < data.people.length; i++) {
+            console.log('for', data.people[i]);
+        }
+
+        for (let index in data.people) {
+            console.log('for in', data.people[index]);
+        }
+
+        for (let person of data.people) {
+            console.log('for of', person);
+        }
+
+        data.people.forEach((person) => {
+            console.log('for each', person);
+        });
+
+        // 1.2   create your own resume data in JSON format
+
+        const resume = {
+            "name": "Shubham Peddarpeth",
+            "contact": {
+                "email": "shubhampeddarpeth@gmail.com",
+                "phone": "9620561614",
+                "location": "Bengalauru KA",
+                "linkedin": "www.linkedin.com/in/shubham-peddarrpeth"
+            },
+            "objective": "Experienced software engineer seeking a challenging role in a forward-thinking company where I can enhance my skills and contribute to meaningful projects.",
+            "education": [
+                {
+                    "degree": "B.E. in Mechanical Engineering",
+                    "year": "2017-2020",
+                    "achievements": ["Graduated Blde Engineering College"]
+                }
+            ],
+            "experience": [
+                {
+                    "position": "Software Engineer",
+                    "company": "63 Moons Technoligies Limited",
+                    "location": "Mumbai MH",
+                    "year": "2022-2023",
+                    "responsibilities": [
+                        "Developed web applications using JavaScript, React, and Node.js.",
+                        "Collaborated with cross-functional teams to design user-friendly interfaces.",
+                        "Optimized application performance and reduced load times by 30%."
+                    ]
+                }
+            ],
+            "skills": [
+                "JavaScript", "Python", "React", "Node.js", "SQL", "Git"
+            ],
+            "languages": [
+                {
+                    "language": "English",
+                    "proficiency": "Native"
+                }
+            ],
+            "hobbies": ["Photography", "Traveling", "Reading"]
+        }
+
+
+    </script>
+</body>
+
+</html>
